@@ -1,6 +1,9 @@
 name: Create and publish a Docker image
 
 on:
+  workflow_dispatch:
+    branches:
+      - main
   push:
     branches:
       - main
