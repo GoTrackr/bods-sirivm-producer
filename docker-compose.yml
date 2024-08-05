@@ -1,0 +1,14 @@
+services:
+  bods-sirivm-producer:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - BODS_APIKEY=
+      - BODS_HOST=
+      - BODS_OPERATORS=
+      - KAFKA_CLIENTID=
+      - KAFKA_BROKERS=
+      - KAFKA_TOPIC=
+      - MINIMUM_SECONDS_BETWEEN_CALLS=
+      - LOGGING=
